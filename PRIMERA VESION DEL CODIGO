@@ -1,0 +1,20 @@
+# Version ANTES de refactorizar: nombres poco claros, todo mezclado,
+# codigo repetido y numeros magicos.
+def f(t, a, b=0):
+    if t == "c":
+        r = 3.14159 * a * a
+        print("El area es: " + str(r))
+        return r
+    if t == "r":
+        r = a * b
+        print("El area es: " + str(r))
+        return r
+    if t == "t":
+        r = a * b / 2
+        print("El area es: " + str(r))
+        return r
+
+
+f("c", 5)
+f("r", 4, 6)
+f("t", 3, 8)
