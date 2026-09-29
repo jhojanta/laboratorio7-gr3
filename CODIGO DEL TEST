@@ -1,0 +1,15 @@
+import math
+import pytest
+from figuras_despues import area_circulo, area_rectangulo, area_triangulo
+
+
+def test_area_circulo():
+    assert area_circulo(5) == pytest.approx(math.pi * 25)
+
+
+def test_area_rectangulo():
+    assert area_rectangulo(4, 6) == 24
+
+
+def test_area_triangulo():
+    assert area_triangulo(3, 8) == 12
