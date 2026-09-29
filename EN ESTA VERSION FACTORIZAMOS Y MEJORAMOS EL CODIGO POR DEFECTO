@@ -1,0 +1,28 @@
+"""Calculo del area de figuras geometricas (version refactorizada)."""
+import math
+
+
+def area_circulo(radio: float) -> float:
+    return math.pi * radio ** 2
+
+
+def area_rectangulo(base: float, altura: float) -> float:
+    return base * altura
+
+
+def area_triangulo(base: float, altura: float) -> float:
+    return base * altura / 2
+
+
+def mostrar_area(nombre_figura: str, area: float) -> None:
+    print(f"Area del {nombre_figura}: {area:.2f}")
+
+
+def main() -> None:
+    mostrar_area("circulo", area_circulo(radio=5))
+    mostrar_area("rectangulo", area_rectangulo(base=4, altura=6))
+    mostrar_area("triangulo", area_triangulo(base=3, altura=8))
+
+
+if __name__ == "__main__":
+    main()
